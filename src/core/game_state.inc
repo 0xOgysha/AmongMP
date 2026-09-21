@@ -3,15 +3,15 @@
 #endif
 #define _AMONGMP_GAME_STATE_INCLUDED
 
-static g_GameState = _:GAME_STATE_BOOTING;
+static g_GameState = GAME_STATE_BOOTING;
 
-stock GameState_Set(E_GAME_STATE:state)
+stock GameState_Set(state)
 {
-    g_GameState = _:state;
+    g_GameState = state;
     return 1;
 }
 
-stock E_GAME_STATE:GameState_Get()
+stock GameState_Get()
 {
-    return E_GAME_STATE:g_GameState;
+    return g_GameState;
 }
