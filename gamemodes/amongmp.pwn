@@ -23,9 +23,9 @@ public OnGameModeInit()
         TEST_SPAWN_Y,
         TEST_SPAWN_Z,
         TEST_SPAWN_A,
-        WEAPON_FIST, 0,
-        WEAPON_FIST, 0,
-        WEAPON_FIST, 0
+        WEAPON:0, 0,
+        WEAPON:0, 0,
+        WEAPON:0, 0
     );
 
     GameState_Set(GAME_STATE_BOOTING);
