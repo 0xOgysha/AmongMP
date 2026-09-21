@@ -7,7 +7,7 @@ static MySQL:g_SQL = MYSQL_INVALID_HANDLE;
 
 stock bool:Database_Connect()
 {
-    g_SQL = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE);
+    g_SQL = mysql_connect_file("mysql.ini");
 
     if (g_SQL == MYSQL_INVALID_HANDLE || mysql_errno(g_SQL) != 0)
     {
