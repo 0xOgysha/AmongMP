@@ -16,7 +16,18 @@ main()
 public OnGameModeInit()
 {
     SetGameModeText("AmongMP Test");
-    AddPlayerClass(0, TEST_SPAWN_X, TEST_SPAWN_Y, TEST_SPAWN_Z, TEST_SPAWN_A, 0, 0, 0, 0, 0, 0);
+
+    AddPlayerClass(
+        0,
+        TEST_SPAWN_X,
+        TEST_SPAWN_Y,
+        TEST_SPAWN_Z,
+        TEST_SPAWN_A,
+        WEAPON_FIST, 0,
+        WEAPON_FIST, 0,
+        WEAPON_FIST, 0
+    );
+
     GameState_Set(GAME_STATE_BOOTING);
 
     if (!Database_Connect())
