@@ -1,0 +1,21 @@
+{
+  "name": "AmongMP Development Server",
+  "language": "Serbian",
+  "max_players": 16,
+  "network": {
+    "port": 7777,
+    "allow_037_clients": true
+  },
+  "pawn": {
+    "legacy_plugins": [
+      "mysql"
+    ],
+    "main_scripts": [
+      "amongmp"
+    ],
+    "side_scripts": []
+  },
+  "rcon": {
+    "enable": false
+  }
+}
