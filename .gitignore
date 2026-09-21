@@ -1,0 +1,22 @@
+# Compiled PAWN output
+*.amx
+
+# Server/runtime files
+logs/
+crashinfo.txt
+server_log.txt
+
+# Secrets / local configuration
+scriptfiles/mysql.ini
+.env
+*.local.ini
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
